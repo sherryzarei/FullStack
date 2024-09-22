@@ -43,7 +43,7 @@ const server = http.createServer((req, res) => {
             res.end();
         } else {
             // Handle unknown routes with 404
-            res.writeHead(404, { "Content-Type": "application/json" });
+            res.writeHead(404, { "Content-Type": "application/html" });
             res.end(`{"error": "${http.STATUS_CODES[404]}"}`);
         }
     }
